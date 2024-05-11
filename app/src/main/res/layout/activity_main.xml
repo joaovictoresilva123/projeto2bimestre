@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <!-- Título -->
+
+    <!-- Imagem à esquerda do título -->
+
+    <!-- Imagem à direita do título -->
+
+    <!-- Nome -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Desafio de 30 dias de Bondade"
+        android:textColor="@android:color/black"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:id="@+id/imageViewLeft"
+        android:layout_width="26dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="-32dp"
+        android:src="@drawable/coracao" />
+
+    <ImageView
+        android:id="@+id/imageViewRight"
+        android:layout_width="26dp"
+        android:layout_height="34dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-29dp"
+        android:layout_marginEnd="2dp"
+        android:src="@drawable/coracao" />
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nome:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/imageViewLeft"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewName"
+        android:padding="8dp" />
+
+    <!-- Senha -->
+    <TextView
+        android:id="@+id/textViewSenha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/EditTextSenha"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewSenha"
+        android:padding="8dp"/>
+
+    <!-- Idade -->
+    <TextView
+        android:id="@+id/textViewAge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Idade:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/EditTextSenha"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAge"
+        android:padding="8dp"/>
+
+    <!-- Preferências -->
+    <TextView
+        android:id="@+id/textViewPreferences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preferências:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextPreferences"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewPreferences"
+        android:padding="8dp"/>
+
+    <!-- Alergias -->
+    <TextView
+        android:id="@+id/textViewAlergias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alergias:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/editTextPreferences"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAlergias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewAlergias"
+        android:padding="8dp"/>
+
+    <!-- Gostos -->
+    <TextView
+        android:id="@+id/textViewGostos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gostos:"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:layout_below="@id/editTextAlergias"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextGostos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewGostos"
+        android:padding="8dp"/>
+
+    <!-- Desgostos -->
+    <TextView
+        android:id="@+id/textViewDesgostos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desgostos:"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        android:layout_below="@id/editTextGostos"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextDesgostos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewDesgostos"
+        android:padding="8dp"/>
+
+    <!-- Botões -->
+    <Button
+        android:id="@+id/buttonSaveProfile"
+        android:layout_width="113dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextDesgostos"
+        android:layout_marginTop="7dp"
+        android:text="Salvar"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/buttonLogin"
+        android:layout_width="116dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSaveProfile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="238dp"
+        android:layout_marginTop="-44dp"
+        android:layout_marginEnd="41dp"
+        android:text="Login"
+        android:textColor="@android:color/white" />
+
+</RelativeLayout>
